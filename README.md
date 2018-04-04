@@ -1,17 +1,26 @@
 # Memory Game Project
 
-## Table of Contents
+A html, css and js game to test memory. Built as part of the Udacity FEND course.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## How to Load the Game
 
-## Instructions
+- Clone the repo and open index.html
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## How to Play the Game
 
-To get started, open `js/app.js` and start building out the app's functionality
+The game consists of 8 pairs of cards (16 cards total) arranged randomly in a grid.
+The game begins when a player clicks on a card.
+Each move consists of two guesses.
+If the cards match they remain flipped over.
+If they do not match the return to their original state.
+The game is over when all cards are matched.
+When the game is over a modal will appear alerting the player of their success, total number of moves, time taken and an option to restart.
 
 For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+
+### Screenshot
+
+![Game screenshot](img/screenshot.png)
 
 ## Contributing
 
