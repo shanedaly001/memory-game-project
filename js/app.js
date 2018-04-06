@@ -77,6 +77,9 @@ function onCardClick(event){
   this.classList.toggle("disabled");
   openedCards.push(this);
   var len = openedCards.length;
+  if (second === 0 && minute === 0 && hour === 0) {
+    startTimer();
+  }
   if(len === 2){
     moveCounter();
     if(openedCards[0].getElementsByClassName("fa")[0].className === openedCards[1].getElementsByClassName("fa")[0].className){
@@ -91,12 +94,6 @@ function onCardClick(event){
 function moveCounter(){
   moves++;
   counter.innerHTML = moves;
-  if(moves == 1){
-    second = 0;
-    minute = 0;
-    hour = 0;
-    startTimer();
-  }
   if (moves > 12 && moves < 18){
     for( let i= 0; i < 3; i++){
       if(i > 1){
